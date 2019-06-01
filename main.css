@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+html{
+	font-family: 'Cormorant', serif;
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	color: #212121;
+}
+
+header, footer, section, .statistics {
+	padding-left: calc(50vw - 585px);
+	padding-right: calc(50vw - 585px);
+}
+
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 45px;
+}
+
+nav a {
+	text-transform: uppercase;
+	margin-left: 34px;
+	padding-bottom: 7px;
+	position: relative;
+}
+
+nav a::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.2s linear;
+	background-color: #212121;
+}
+
+nav a:hover::after, nav a.active::after {
+	width: 100%;
+}
+
+.home {
+	padding-top: 300px;
+	min-height: 866px;
+	background: url('img/hero.jpg') 100% 0%,  linear-gradient(90deg, #fff 55%, #e1e1e1 55%);
+	background-size: contain, 100% 800px;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 4.6rem;
+	line-height: 1;
+}
+
+.top_text {
+	font-size: 2.2rem;
+	margin-bottom: 25px;
+}
+
+.btn {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	height: 51px;
+	line-height: 49px;
+	border: 1px solid #212121;
+}
+
+.btn_black {
+	width: 144px;
+	background-color: #212121;
+	color: #ffffff;
+	box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn_white {
+	width: 174px;
+	background-color: #ffffff;
+}
+
+.home .btn {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+
+
+
