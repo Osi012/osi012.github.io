@@ -1,224 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Portfolio Website</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link rel="stylesheet"  href="main.css">
+	<meta charset="UTF-8">
+	<title>Who Are You</title>
 </head>
+
 <body>
+<h2>Привет, <span id="id_name"></span>!</h2>
+<p>Давай я угадаю, твой возраст равен <span id="id_year">...</span>, и город в котором ты живешь называется <span id="id_city">...</span>!</p>
+<p>У меня круто получается, верно? )))</p>
+<p>Но это еще не все!!!!!</p>
+<p><span id="animal">...</span></p>
 
-	<section id="home" class="home">
-		<header>
-			<img class="logo" src="img/logo.png" alt="mealex">
-
-			<nav>
-				<a class="active" href="#home">home</a>
-				<a href="#about">about</a>
-				<a href="#service">service</a>
-				<a href="#portfolio">portfolio</a>
-				<a href="#contact">contact</a>
-			</nav>
-		</header>
-
-		<h1>ALEX VIDAL</h1>
-		<div class="top_text">Full Stack Developer</div>
-
-		<a class="btn btn_black" href="#contact">hire me</a>
-		<a class="btn btn_white" href="#about">explore more</a>
+	<script>
+		'use strict';
+		alert('Добро пожаловать!');
+		var start = confirm('Желаете узнать всю правду о себе?');
 		
-	</section>
+		if (start === true) {
+		var name = prompt('Как тебя зовут? =)'); 
 
-	<section id="about" class="about">
-		<h2>about</h2>
-		<p>Hello! I'm <b>Alex</b>, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
-
-		<a class="btn btn_black" href="cv.pdf" target="_blank">DOWNLOAD MY CV</a>
-	</section>
-
-	<section class="skills">
-		<h2>my skills</h2>
-
-		<div class="skill">
-			<div class="skill_name">html/css</div>
-			<div class="progressbar">
-				<div class="progress"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill_name">javascript</div>
-			<div class="progressbar">
-				<div class="progress"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill_name">php</div>
-			<div class="progressbar">
-				<div class="progress"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill_name">phyton</div>
-			<div class="progressbar">
-				<div class="progress"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill_name">ruby</div>
-			<div class="progressbar">
-				<div class="progress"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill_name">java</div>
-			<div class="progressbar">
-				<div class="progress"></div>
-			</div>
-		</div>
-
-	</section>
-
-
-	<section id="service" class="services">
-		<div class="service_container">
-			<h2>WHAT I DO</h2>
-
-			<div class="service_item">
-				<img src="img/monitor.png" alt="service">
-				<h3>Front-end</h3>
-				<p>As a javascript developer, I have experience in HTML5 and CSS3 techniques working with jQuery or more advanced javascript MVC frameworks such as angular</p>
-			</div>
-
-			<div class="service_item">
-				<img src="img/coding.png" alt="service">
-				<h3>Back-end</h3>
-				<p>Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.</p>
-			</div>
-
-			<div class="service_item">
-				<img src="img/code.png" alt="service">
-				<h3>Consultancy</h3>
-				<p>As well as providing development services, I can also help you decide strategic roadmaps via consultancy services.</p>
-			</div>
-
-		</div>	
-	</section>
-
-	<section id="portfolio" class="portfolio">
-		<h2>MY RECENT WORKS</h2>
-
-		<div class="portfolio_item">
-			<img src="img/img1.jpg">
-			<div class="overlay">
-				<h4>Project Title</h4>
-				<a href="#"><i class="far fa-eye"></i></a>
-				<a href="#"><i class="fas fa-link"></i></a>
-				<a href="#"><i class="fas fa-share-alt"></i></a>
-			</div>
-		</div>
-
-		<div class="portfolio_item">
-			<img src="img/img2.jpg">
-			<div class="overlay">
-				<h4>Project Title</h4>
-				<a href="#"><i class="far fa-eye"></i></a>
-				<a href="#"><i class="fas fa-link"></i></a>
-				<a href="#"><i class="fas fa-share-alt"></i></a>
-			</div>
-		</div>
-
-		<div class="portfolio_item">
-			<img src="img/img3.jpg">
-			<div class="overlay">
-				<h4>Project Title</h4>
-				<a href="#"><i class="far fa-eye"></i></a>
-				<a href="#"><i class="fas fa-link"></i></a>
-				<a href="#"><i class="fas fa-share-alt"></i></a>
-			</div>
-		</div>
-
-		<div class="portfolio_item">
-			<img src="img/img4.jpg">
-			<div class="overlay">
-				<h4>Project Title</h4>
-				<a href="#"><i class="far fa-eye"></i></a>
-				<a href="#"><i class="fas fa-link"></i></a>
-				<a href="#"><i class="fas fa-share-alt"></i></a>
-			</div>
-		</div>
-
-		<div class="portfolio_item">
-			<img src="img/img5.jpg">
-			<div class="overlay">
-				<h4>Project Title</h4>
-				<a href="#"><i class="far fa-eye"></i></a>
-				<a href="#"><i class="fas fa-link"></i></a>
-				<a href="#"><i class="fas fa-share-alt"></i></a>
-			</div>
-		</div>
-
-		<div class="portfolio_item">
-			<img src="img/img6.jpg">
-			<div class="overlay">
-				<h4>Project Title</h4>
-				<a href="#"><i class="far fa-eye"></i></a>
-				<a href="#"><i class="fas fa-link"></i></a>
-				<a href="#"><i class="fas fa-share-alt"></i></a>
-			</div>
-		</div>
-
-		<div class="btn btn_white">load more</div>
-	</section>
-
-
-	<div class="statistics">
+		if (name === 'null') {
+		name = 'Незнакомец';
+		document.getElementById("id_name").innerHTML = name;
+		console.log('Меня зовут ' + name + '!');
+		}
+		else {
+		document.getElementById("id_name").innerHTML = name;
+		console.log('Меня зовут ' + name + '!');
+		}
+			
+		var year = prompt('А сколько тебе лет?'); 
+		document.getElementById("id_year").innerHTML = year;
+		console.log('Мне ' + year + '.');
 		
-		<div class="stat_item">
-			<div class="count">10</div>
-			<div class="description">Years Experience</div>
-		</div>
-		<div class="stat_item">
-			<div class="count">120</div>
-			<div class="description">Projects Delivered</div>
-		</div>
-		<div class="stat_item">
-			<div class="count">10</div>
-			<div class="description">Seconds on this site!<br> What are you waiting for?</div>
-		</div>
-
-	</div>
-
-	<section id="contact">
-		<h2>contact</h2>
-
-		<form>
-			<input type="text" name="username" placeholder="Name">
-			<input type="email" name="usermail" placeholder="E-mail">
-			<textarea placeholder="Message"></textarea>
-			<button class="btn btn_white" type="submit">hire me <i class="far fa-paper-plane"></i> </button>
-		</form>
-
-	</section>
-
-	<footer>
-		<div class="social">
-			<a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a href="http://twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
-			<a href="http://linkedin.com" target="_blank"<i class="fab fa-linkedin-in"></i></a>
-			<a href="http://google.com" target="_blank"> <i class="fab fa-google-plus-g"></i></a>
-		</div>
-
-		<div class="copyright">2017. All Rights Reserved</div>
-
-		<div class="to_top"><i class="fas fa-long-arrow-alt-up"></i></div>
-	</footer>
-
+		var city = prompt('Как называется город в которо ты живешь?'); 
+		document.getElementById("id_city").innerHTML = city;
+		console.log('Мой город ' + city + '.');
+		
+		var animal = prompt('У тебя есть питомец? PS поставь + или - в ответе.'); 
+		document.getElementById("animal").innerHTML = animal;
+		if (animal == '+') {
+		var animal_text = 'Кое-кто очень рад встречать тебя дома каждый вечер и с грустью и надеждой проважает по утрам.';
+		document.getElementById("animal").innerHTML = animal_text;
+		console.log('У меня есть домашний любимец.');
+		
+		var animal_name = prompt('А как его зовут?'); 
+		console.log('Его зовут ' + animal_name + '.');
+		document.write('Имя... Кажется...' + animal_name + '!! ')
+		document.write('Это твой любимый питомец! Его имя ' + animal_name + '!! =)')
+		}
+		else {
+		var animal_text = 'Тебе наверняка бывает по вечерам одиноко.. Тебе очень пригодился бы верный друг, заведи себе питомца и познаешь истинное счастье %)';
+		document.getElementById("animal").innerHTML = animal_text;
+		console.log('У меня нет домашнего животного, но когда нибудь я обязательно заведу питомца!');
+		}
+		}
+		
+		else {
+		name = 'Незнакомец';
+		document.getElementById("id_name").innerHTML = name;
+		year = 'годам, которые ты прожил от дня своего рождения';
+		document.getElementById("id_year").innerHTML = year;
+		city = 'твоим городом';
+		document.getElementById("id_city").innerHTML = city;
+		animal = 'Всё ты узнаешь обновив страницу и согласившись на <u><b>мои условия</b></u>! Ахахааа!)';
+		document.getElementById("animal").innerHTML = animal;
+		console.log('Пользователь отказался предоставить информацию.');
+		}
+	</script>
 </body>
 </html>
